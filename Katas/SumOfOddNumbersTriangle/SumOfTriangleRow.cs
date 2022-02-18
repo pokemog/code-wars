@@ -1,9 +1,8 @@
-public static class SumOfTriangleRow
+public class SumOfTriangleRow
 {
-    public static long rowSumOddNumbers(long n)
+    public long RowSumOddNumbers(long n)
     {
         long sum = 0;
-        // TODO
         long rowIndex = indexOfRow(n);
         long startValue = nthOddNumber(rowIndex);
 
@@ -18,7 +17,7 @@ public static class SumOfTriangleRow
         return sum;
     }
 
-    public static long indexOfRow(long row)
+    private long indexOfRow(long row)
     {
         long indexOfRow = 1;
 

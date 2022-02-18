@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TwoToOne
+namespace Katas.Console
 {
     class Program
     {
@@ -8,7 +8,8 @@ namespace TwoToOne
         {
             var a = "axyb";
             var b = "feceeg";
-            Longest(a, b);
+            var twoToOne = new TwoToOne();
+            var result = twoToOne.Longest(a, b);
         }
 
         

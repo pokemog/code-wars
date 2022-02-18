@@ -1,7 +1,6 @@
 public class BouncingBall {
 	
-	public static int bouncingBall(double h, double bounce, double window) {
-		  // your code
+	public int Bounces(double h, double bounce, double window) {
       if (h <= 0) {
         return -1;
       }
@@ -18,7 +17,7 @@ public class BouncingBall {
       double newHeight = h * bounce;
       if (newHeight >= window) {
         isSeenCount++;
-        isSeenCount += bouncingBall(newHeight, bounce, window);
+        isSeenCount += Bounces(newHeight, bounce, window);
       }
 	    return isSeenCount;
 	}

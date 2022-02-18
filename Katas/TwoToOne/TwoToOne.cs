@@ -1,5 +1,4 @@
-﻿namespace Katas;
-public class TwoToOne
+﻿public class TwoToOne
 {
     public string Longest(string s1, string s2)
     {
@@ -23,8 +22,6 @@ public class TwoToOne
                 longest += character;
             }
         }
-
-        Console.WriteLine(longest);
 
         var tmpArray = longest.ToCharArray();
         var sortedString = string.Empty;
